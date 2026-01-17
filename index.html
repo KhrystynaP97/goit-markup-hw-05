@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -56,7 +56,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <label for="modal-toggle" class="hero-button">Order Service</label>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -472,18 +474,13 @@
     </footer>
 
     <!-- Modal -->
-    <input
-      type="checkbox"
-      id="modal-toggle"
-      class="modal-toggle visually-hidden"
-    />
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <label for="modal-toggle" class="modal-close-button">
+        <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </label>
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
@@ -558,7 +555,7 @@
           <button type="submit" class="modal-submit-button">Send</button>
         </form>
       </div>
-      <label for="modal-toggle" class="backdrop-close"></label>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
