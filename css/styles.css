@@ -497,6 +497,10 @@ img {
 }
 
 /* Footer Subscribe */
+.footer-subscribe-wrapper {
+  margin-left: auto;
+}
+
 .footer-subscribe-title {
   font-weight: 500;
   font-size: 16px;
@@ -532,7 +536,7 @@ img {
 }
 
 .footer-subscribe-input:focus {
-  border-color: #4d5ae5;
+  border-color: #31d0aa;
 }
 
 .footer-subscribe-input::placeholder {
@@ -560,7 +564,7 @@ img {
 
 .footer-subscribe-button:hover,
 .footer-subscribe-button:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .footer-subscribe-icon {
